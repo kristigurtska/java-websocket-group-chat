@@ -1,0 +1,32 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Group chat</title>
+        </head>
+        <body>
+
+        <table>
+            <tr>
+                <td colspan=2>
+                    <input type="text" placeholder="Username" id="username"/>
+                    <button type="button" onclick="connect()">Connect</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea name="" id="log" cols="80" rows="10" readonly>
+
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" size="50" id="msg" placeholder="Message"/>
+                    <button type="button" onclick="sendMessage()">Send</button>
+                </td>
+            </tr>
+        </table>
+        <script src="websocket.js"></script>
+        </body>
+        </html>
